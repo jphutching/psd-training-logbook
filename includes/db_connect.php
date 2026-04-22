@@ -3,7 +3,7 @@ session_start();
 $host = 'localhost';
 $db   = 'psd_app_logs';
 $user = 'root'; 
-$pass = ''; 
+$pass = ''; // Default for KSWEB is usually empty
 
 try {
      $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8mb4", $user, $pass, [
